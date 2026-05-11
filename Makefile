@@ -67,7 +67,7 @@ demo: ## end-to-end demo (load -> alert -> trace -> drift)
 	$(MAKE) drift
 
 verify: ## rubric gate — exits 0 only if all checkpoints pass
-	python3 scripts/verify.py
+	python scripts/verify.py
 
 lint-dashboards: ## validate Grafana dashboard JSONs
 	python3 scripts/lint-dashboards.py 02-prometheus-grafana/grafana/dashboards/*.json
