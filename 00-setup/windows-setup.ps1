@@ -1,6 +1,6 @@
 ## Windows pre-flight check (PowerShell).
-## Run via: pwsh windows-setup.ps1
-## Or:      powershell -ExecutionPolicy Bypass -File windows-setup.ps1
+## Run via: powershell -ExecutionPolicy Bypass -File windows-setup.ps1
+## Or:      pwsh windows-setup.ps1
 
 $ErrorActionPreference = "Stop"
 

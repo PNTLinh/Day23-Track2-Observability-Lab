@@ -27,7 +27,9 @@ This:
 
 - **macOS:** `bash macos-setup.sh` — checks Docker Desktop is running, suggests increasing memory limit if < 4 GB allocated
 - **Linux:** `bash linux-setup.sh` — checks `docker` group membership, suggests `sudo usermod -aG docker $USER` if needed
-- **Windows:** `pwsh windows-setup.ps1` — verifies WSL2 + Docker Desktop integration
+- **Windows:** `powershell -ExecutionPolicy Bypass -File windows-setup.ps1` — verifies WSL2 + Docker Desktop integration
+
+If `make up` fails with `Bind for 0.0.0.0:9090 failed: port is already allocated`, another container or local service is already using Prometheus's port. Check it with `docker ps` and stop the offending container before rerunning `make up`.
 
 ## Submission checkpoint (5 pts)
 

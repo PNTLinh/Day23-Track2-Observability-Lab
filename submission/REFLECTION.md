@@ -2,20 +2,42 @@
 
 > Fill in each section. Grader reads the "What I'd change" paragraph closest.
 
-**Student:** _your name_
-**Submission date:** _YYYY-MM-DD_
-**Lab repo URL:** _public GitHub URL_
+**Student:** Nguyễn Thùy LInh
+**Submission date:** _2026-05-11_
+**Lab repo URL:** https://github.com/PNTLinh/Day23-Track2-Observability-Lab.git
 
 ---
 
 ## 1. Hardware + setup output
 
 Paste output of `python3 00-setup/verify-docker.py`:
-
 ```
-... paste here ...
+{
+  "docker": {
+    "ok": true,
+    "version": "29.4.0"
+  },
+  "compose_v2": {
+    "ok": true,
+    "version": "5.1.1"
+  },
+  "ram_gb_available": 5.46,
+  "ram_ok": true,
+  "required_ports": [
+    8000,
+    9090,
+    9093,
+    3000,
+    3100,
+    16686,
+    4317,
+    4318,
+    8888
+  ],
+  "bound_ports": [],
+  "all_ports_free": true
+}
 ```
-
 ---
 
 ## 2. Track 02 — Dashboards & Alerts

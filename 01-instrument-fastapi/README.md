@@ -37,6 +37,8 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 curl localhost:8000/metrics | head -40
 ```
 
+Open the app in your browser at `http://localhost:8000/`. The `0.0.0.0` host is only the bind address for Uvicorn, not a browser URL.
+
 ## Submission checkpoint (20 pts)
 
 - 5 pts: `/metrics` exposes all 6 metric families above
